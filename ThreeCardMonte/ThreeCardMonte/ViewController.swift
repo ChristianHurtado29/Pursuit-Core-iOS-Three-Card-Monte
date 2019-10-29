@@ -32,13 +32,13 @@ class ViewController: UIViewController {
         case 0:
          let random1 = cardArray.randomElement()
                 if random1 == 1{
-                card0.setBackgroundImage(#imageLiteral(resourceName: "kingCard.jpg"), for: .normal)
+                card0.setBackgroundImage(#imageLiteral(resourceName: "kingCard"), for: .normal)
             mainLabel.text = "Yay! 🤘🏾"
                     
                     [card0, card1, card2].forEach({$0?.setImage(UIImage(named: "cardBackRed"), for: .normal)})
                     [card0, card1, card2].forEach({$0?.isEnabled = false})
                     
-                } else {card0.setBackgroundImage(#imageLiteral(resourceName: "threeCard.png"), for: .normal)
+                } else {card0.setBackgroundImage(#imageLiteral(resourceName: "threeCard"), for: .normal)
                     mainLabel.text = "Wrong 😢"
                     
                     [card0, card1, card2].forEach({$0?.setImage(UIImage(named: "cardBackRed"), for: .normal)})
@@ -48,12 +48,12 @@ class ViewController: UIViewController {
 
             let random1 = cardArray.randomElement()
             if random1 == 1{
-            card1.setBackgroundImage(#imageLiteral(resourceName: "kingCard.jpg"), for: .normal)
+            card1.setBackgroundImage(#imageLiteral(resourceName: "kingCard"), for: .normal)
         mainLabel.text = "Yay! 🤘🏾"
                 
                 [card0, card1, card2].forEach({$0?.setImage(UIImage(named: "cardBackRed"), for: .normal)})
                 [card0, card1, card2].forEach({$0?.isEnabled = false})
-            } else {card1.setBackgroundImage(#imageLiteral(resourceName: "threeCard.png"), for: .normal)
+            } else {card1.setBackgroundImage(#imageLiteral(resourceName: "threeCard"), for: .normal)
                 mainLabel.text = "Wrong 😢"
                 
                 [card0, card1, card2].forEach({$0?.setImage(UIImage(named: "cardBackRed"), for: .normal)})
@@ -62,12 +62,12 @@ class ViewController: UIViewController {
         case 2:
         let random1 = cardArray.randomElement()
             if random1 == 1{
-            card2.setBackgroundImage(#imageLiteral(resourceName: "kingCard.jpg"), for: .normal)
+            card2.setBackgroundImage(#imageLiteral(resourceName: "kingCard"), for: .normal)
         mainLabel.text = "Yay! 🤘🏾"
                 
                 [card0, card1, card2].forEach({$0?.setImage(UIImage(named: "cardBackRed"), for: .normal)})
                 [card0, card1, card2].forEach({$0?.isEnabled = false})
-            } else {card2.setBackgroundImage(#imageLiteral(resourceName: "threeCard.png"), for: .normal)
+            } else {card2.setBackgroundImage(#imageLiteral(resourceName: "threeCard"), for: .normal)
                 mainLabel.text = "Wrong 😢"
                 
                 [card0, card1, card2].forEach({$0?.setImage(UIImage(named: "cardBackRed"), for: .normal)})
@@ -82,9 +82,9 @@ class ViewController: UIViewController {
     @IBAction func newGame(_ sender: UIButton) {
        
         mainLabel.text = "Find the King!"
-        card0.setBackgroundImage(#imageLiteral(resourceName: "cardBackRed.png"), for: .normal)
-        card1.setBackgroundImage(#imageLiteral(resourceName: "cardBackRed.png"), for: .normal)
-        card2.setBackgroundImage(#imageLiteral(resourceName: "cardBackRed.png"), for: .normal)
+        card0.setBackgroundImage(#imageLiteral(resourceName: "cardBackRed"), for: .normal)
+        card1.setBackgroundImage(#imageLiteral(resourceName: "cardBackRed"), for: .normal)
+        card2.setBackgroundImage(#imageLiteral(resourceName: "cardBackRed"), for: .normal)
         
         [card0, card1, card2].forEach({$0?.setImage(UIImage(named: "cardBackRed"), for: .normal)})
         [card0, card1, card2].forEach({$0?.isEnabled = true})
